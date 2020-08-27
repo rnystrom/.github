@@ -1,0 +1,91 @@
+sections:
+- name: Mobile
+  items:
+  - navigation:
+      name: github/mobile
+      path: github/mobile
+      icon:
+        url: https://github.com/github.png
+  - navigation:
+      name: github/mobile-ios
+      path: github/mobile-ios
+      icon:
+        url: https://github.com/github.png
+  - navigation:
+      name: github/mobile-Android
+      path: github/mobile-Android
+      icon:
+        url: https://github.com/github.png
+  - navigation:
+      path: github/mobile/issues/new
+      name: New Mobile Issue
+      icon:
+        name: plus-circle
+        tint: ffffff
+        background: 6f42c1
+  - navigation:
+      path: github/mobile/issues/new
+      name: New iOS Issue
+      icon:
+        name: plus-circle
+        tint: ffffff
+        background: 000000
+- name: Planning
+  items:
+  - list:
+      name: I2C/CLI
+      query: repo:github/i2c-backlog is:issue is:open label:CLI sort:updated-desc
+      type: issue
+      icon:
+        name: terminal
+  - list:
+      name: I2C/Desktop
+      query: repo:github/i2c-backlog is:issue is:open label:desktop sort:updated-desc
+      type: issue
+      icon:
+        url: https://github.com/desktop.png?size=128
+  - list:
+      name: I2C/Mobile
+      query: repo:github/i2c-backlog is:issue is:open label:mobile sort:updated-desc
+      type: issue
+      icon:
+        emoji: 📱
+  - list:
+      name: Mobile Stories
+      query: repo:github/mobile is:issue is:open label:story sort:updated-desc
+      type: issue
+      icon:
+        name: project
+- name: My Work
+  items:
+  - list:
+      name: Involves @me
+      query: archived:false is:open involves:@me sort:updated-desc
+      type: issue
+      icon:
+        name: eye
+  - list:
+      name: Mentions @me
+      query: archived:false is:open mentions:@me sort:updated-desc
+      type: issue
+      icon:
+        name: mention
+  - list:
+      name: Created
+      query: archived:false is:open author:@me sort:created-desc
+      type: issue
+      icon:
+        name: pencil
+  - list:
+      name: Ready to merge
+      query: author:@me is:open is:pr archived:false status:success review:approved
+        sort:updated-desc
+      type: issue
+      icon:
+        name: git-pull-request
+  - list:
+      name: Needs review
+      query: -author:@me is:open is:pr archived:false review-requested:@me sort:created-asc
+      type: issue
+      icon:
+        name: code-review
