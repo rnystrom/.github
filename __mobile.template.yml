@@ -31,3 +31,11 @@ sections:
       type: issue
       icon:
         name: terminal
+    - navigation:
+      path: github/mobile/issues/new
+      name: New Mobile Issue
+      icon:
+        name: plus-circle
+        tint: ffffff
+        background: 6f42c1
+    
