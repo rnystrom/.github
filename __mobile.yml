@@ -2,40 +2,40 @@ sections:
 - name: My Work
   items:
     - list:
-      name: My Issues
-      query: archived:false is:issue is:open author:@me sort:created-desc
-      type: issue
-      icon:
-        name: terminal
+        name: My Issues
+        query: archived:false is:issue is:open author:@me sort:created-desc
+        type: issue
+        icon:
+          name: terminal
     - list:
-      name: Assigned Issues
-      query: archived:false is:issue is:open assignee:@me sort:created-desc
-      type: issue
-      icon:
-        name: terminal
+        name: Assigned Issues
+        query: archived:false is:issue is:open assignee:@me sort:created-desc
+        type: issue
+        icon:
+          name: terminal
     - list:
-      name: My Pull Requests
-      query: archived:false is:pr is:open author:@me sort:created-desc
-      type: issue
-      icon:
-        name: terminal
+        name: My Pull Requests
+        query: archived:false is:pr is:open author:@me sort:created-desc
+        type: issue
+        icon:
+          name: terminal
     - list:
-      name: Review requests
-      query: archived:false is:pr is:open author:@me sort:created-desc
-      type: issue
-      icon:
-        name: terminal
+        name: Review requests
+        query: archived:false is:pr is:open author:@me sort:created-desc
+        type: issue
+        icon:
+          name: terminal
     - list:
-      name: Repositories
-      query: archived:false user:@me sort:updated-desc
-      type: issue
-      icon:
-        name: terminal
+        name: Repositories
+        query: archived:false user:@me sort:updated-desc
+        type: issue
+        icon:
+          name: terminal
     - navigation:
-      path: github/mobile/issues/new
-      name: New Mobile Issue
-      icon:
-        name: plus-circle
-        tint: ffffff
-        background: 6f42c1
+        path: github/mobile/issues/new
+        name: New Mobile Issue
+        icon:
+          name: plus-circle
+          tint: ffffff
+          background: 6f42c1
     
