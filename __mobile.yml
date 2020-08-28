@@ -2,40 +2,41 @@ sections:
 - name: My Work
   items:
     - list:
-        name: My Issues
-        query: archived:false is:issue is:open author:@me sort:created-desc
-        type: issue
-        icon:
-          name: terminal
-    - list:
         name: Assigned Issues
         query: archived:false is:issue is:open assignee:@me sort:created-desc
         type: issue
         icon:
-          name: terminal
+          name: issue-opened
+          tint: ffffff
+          background: 34D058
     - list:
         name: My Pull Requests
         query: archived:false is:pr is:open author:@me sort:created-desc
         type: issue
         icon:
-          name: terminal
+          name: git-pull-request
+          tint: ffffff
+          background: 2188FF
     - list:
         name: Review requests
         query: archived:false is:pr is:open author:@me sort:created-desc
         type: issue
         icon:
-          name: terminal
+          name: code-review
+          tint: ffffff
+          background: FB8532
     - list:
         name: Repositories
         query: archived:false user:@me sort:updated-desc
         type: issue
         icon:
-          name: terminal
+          name: repo
+          tint: ffffff
+          background: 8A63D2
     - navigation:
-        path: github/mobile/issues/new
-        name: New Mobile Issue
+        path: issues/new
+        name: Create Issue
         icon:
           name: plus-circle
-          tint: ffffff
-          background: 6f42c1
+          tint: 0366D6
     
