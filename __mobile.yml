@@ -34,7 +34,7 @@ sections:
           tint: ffffff
           background: 8A63D2
     - navigation:
-        path: issues/new
+        path: __issues/new
         name: Create Issue
         icon:
           name: plus-circle
