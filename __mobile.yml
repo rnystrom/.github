@@ -19,7 +19,7 @@ sections:
           background: 2188FF
     - list:
         name: Review requests
-        query: archived:false is:pr is:open author:@me sort:created-desc
+        query: archived:false is:pr is:open review-requested:@me sort:created-desc
         type: issue
         icon:
           name: code-review
